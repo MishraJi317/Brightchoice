@@ -6,7 +6,7 @@ const Package = require('./models/Package');
 const Review = require('./models/Review');
 const Teacher = require('./models/Teachers');
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/brightchoice';
+const MONGODB_URI = 'mongodb+srv://ashumishra317_db_user:<db_password>@brightchoice.vppzuoi.mongodb.net/';
 
 const sampleCourses = [
   {
