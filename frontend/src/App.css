@@ -1,0 +1,21 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bright Color Palette */
+:root {
+  --primary-pink: #FF6B9D;
+  --primary-blue: #4ECDC4;
+  --primary-yellow: #FFE66D;
+  --primary-orange: #FF8B42;
+  --primary-purple: #A8E6CF;
+  --primary-green: #95E1D3;
+  --dark-blue: #2C3E50;
+  --white: #FFFFFF;
+  --light-bg: #F8F9FA;
+}
+
+
+
