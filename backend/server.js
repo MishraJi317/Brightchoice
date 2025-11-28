@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/brightchoice';
+const MONGODB_URI = 'mongodb+srv://BrightChoiceAdmin:paarth011@brightchoice.vppzuoi.mongodb.net/brightchoice';
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
