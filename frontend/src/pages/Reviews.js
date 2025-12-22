@@ -34,12 +34,12 @@ const Reviews = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const dataobj = {
-        "parentName": "Ashish Mishra",
-        "childName": "Paarth",
-        "rating": 5,
-        "comment": "My Son absolutely loves the coding classes! The teachers are patient and make learning so much fun. Highly recommend!"
-      }
+      // const dataobj = {
+      //   "parentName": "Ashish Mishra",
+      //   "childName": "Paarth",
+      //   "rating": 5,
+      //   "comment": "My Son absolutely loves the coding classes! The teachers are patient and make learning so much fun. Highly recommend!"
+      // }
       console.log(formData);
       const response = await axios.post('/api/reviews', formData);
       setReviews([response.data, ...reviews]);
