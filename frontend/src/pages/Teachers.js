@@ -62,7 +62,7 @@ const Teachers = () => {
                <header class="profile-header">
                  <div class="avatar" aria-hidden="true">
                   
-                   <img src="https://via.placeholder.com/200" alt="Profile picture of John Doe" />
+                   <img src="https://via.placeholder.com/200" alt="Profile of John Doe" />
                  </div>
            
                  <div class="name-qual">
