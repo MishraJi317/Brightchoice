@@ -14,14 +14,13 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li><a href="/courses">Courses</a></li>
-              <li><a href="/packages">Packages</a></li>
               <li><a href="/reviews">Reviews</a></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Contact Us</h4>
-            <p>Email: info@brightchoice.com</p>
-            <p>Phone: 1-800-BRIGHT</p>
+            <p>Email: brightchoice011@gmail.com</p>
+            <p>Phone: 7982553140</p>
           </div>
         </div>
         <div className="footer-bottom">

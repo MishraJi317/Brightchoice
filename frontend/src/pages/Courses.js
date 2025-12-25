@@ -2,9 +2,25 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Courses.css';
 
+
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [coursedata, setCoursedata] = useState();
+  const [isvisible, setIsvisible] = useState(false);
+  const [sourceimg, setSourceimg] = useState('');
+
+const viewImage = (imgsrc) => {
+  setSourceimg(imgsrc);
+  setIsvisible(true);
+  document.body.style.overflow = 'hidden';
+}
+
+
+const hideImage = () => {
+  setIsvisible(false);
+    document.body.style.overflow = 'auto';
+}
 
   useEffect(() => {
     fetchCourses();
@@ -20,7 +36,7 @@ const Courses = () => {
       // Set sample data if API fails
       setCourses([
         {
-          _id: '1',
+          id: '1',
           title: 'Fun with Coding',
           description: 'Learn programming basics through fun games and interactive activities!',
           ageGroup: '6-10 years',
@@ -28,59 +44,30 @@ const Courses = () => {
           price: 199,
           category: 'Technology',
           image: '💻'
-        },
-        {
-          _id: '2',
-          title: 'Creative Art Studio',
-          description: 'Express yourself through painting, drawing, and digital art!',
-          ageGroup: '5-12 years',
-          duration: '10 weeks',
-          price: 179,
-          category: 'Arts',
-          image: '🎨'
-        },
-        {
-          _id: '3',
-          title: 'Math Adventures',
-          description: 'Make math fun with puzzles, games, and real-world problems!',
-          ageGroup: '7-11 years',
-          duration: '14 weeks',
-          price: 189,
-          category: 'Mathematics',
-          image: '🔢'
-        },
-        {
-          _id: '4',
-          title: 'Science Explorers',
-          description: 'Discover the wonders of science through exciting experiments!',
-          ageGroup: '6-10 years',
-          duration: '12 weeks',
-          price: 199,
-          category: 'Science',
-          image: '🔬'
-        },
-        {
-          _id: '5',
-          title: 'Language Learning',
-          description: 'Learn new languages through stories, songs, and games!',
-          ageGroup: '5-12 years',
-          duration: '16 weeks',
-          price: 219,
-          category: 'Languages',
-          image: '🌍'
-        },
-        {
-          _id: '6',
-          title: 'Music & Rhythm',
-          description: 'Explore music, learn instruments, and create your own songs!',
-          ageGroup: '6-11 years',
-          duration: '10 weeks',
-          price: 179,
-          category: 'Music',
-          image: '🎵'
         }
       ]);
       setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    
+    try {
+    
+
+      setCoursedata({
+      ...coursedata,
+      [e.target.name]: e.target.value
+    });
+
+      
+
+      const courses = await axios.post('/api/courses', coursedata);
+      setCourses([courses.data, ...courses]);
+      
+    } catch (error) {
+      console.error('Error submitting Cources:', error);
+     
     }
   };
 
@@ -94,6 +81,12 @@ const Courses = () => {
 
   return (
     <div className="courses-page">
+      {isvisible && (
+      <div className="course-image">
+        <img className='closebtn' onClick={() => hideImage()} src='/assets/close.png'/>
+        <img className='course_img' src={`${sourceimg}`} alt="" />
+      </div>) }
+
       <div className="courses-header">
         <h1>🌟 Our Amazing Courses 🌟</h1>
         <p>Choose from a variety of fun and educational courses designed for your child!</p>
@@ -107,7 +100,9 @@ const Courses = () => {
           <div className="courses-grid">
             {courses.map((course) => (
               <div key={course._id} className="course-card">
-                <div className="course-icon">{course.image || '📚'}</div>
+                <div className="course-icon">
+                  <img className='course_id' src={course.image} alt={course.title} />
+                </div>
                 <div className="course-category">{course.category}</div>
                 <h3 className="course-title">{course.title}</h3>
                 <p className="course-description">{course.description}</p>
@@ -121,11 +116,8 @@ const Courses = () => {
                     <span>{course.duration}</span>
                   </div>
                 </div>
-                <div className="course-price">
-                  <span className="price-amount">${course.price}</span>
-                  <span className="price-label">per course</span>
-                </div>
-                <button className="course-button">Enroll Now! 🚀</button>
+                <button className="course-button" onClick={ () => viewImage(course.pamphlet_image)}>Know More 🚀</button>
+
               </div>
             ))}
           </div>

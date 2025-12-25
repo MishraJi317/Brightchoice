@@ -1,3 +1,36 @@
+.teachers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teachers-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.teachers-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.teachers-header p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 100px;
+}
+
+
 .profile-card {
   width: 320px;
   background: #ffffff;

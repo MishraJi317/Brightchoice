@@ -51,18 +51,25 @@ const Teachers = () => {
 
   return (
    <div className="teachers-container">
+
+    <div className="teachers-header">
+        <h1>🌟 Our Amazing Teachers 🌟</h1>
+        <p>Meet our dedicated and experienced teachers who make learning fun!</p>
+      </div>
+
     {teachers.length === 0 ? (
-          <div className="no-courses">
-            <p>No courses available at the moment. Check back soon! 🎉</p>
+          <div className="no-teachers">
+            <p>No teachers available at the moment. Check back soon! 🎉</p>
           </div>
         ) : (
-          <div className="courses-grid">
+          
+          <div className="teachers-grid">
             {teachers.map((teacher) => (
                <article class="profile-card" aria-label="Profile card">
                <header class="profile-header">
                  <div class="avatar" aria-hidden="true">
                   
-                   <img src="https://via.placeholder.com/200" alt="Profile of John Doe" />
+                   <img src="/assets/teacher_pfp.png" alt="Teacher Profile" />
                  </div>
            
                  <div class="name-qual">
@@ -77,13 +84,7 @@ const Teachers = () => {
                </div>
            
                <p class="bio">
-                 some dummy data
                </p>
-           
-               <footer class="card-footer" aria-hidden="true">
-                 <span class="tag">Phonics</span>
-                 <span class="tag">Grammer</span>
-               </footer>
              </article>
             ))}
           </div>

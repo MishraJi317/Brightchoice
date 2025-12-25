@@ -10,58 +10,70 @@ const MONGODB_URI = 'mongodb+srv://BrightChoiceAdmin:paarth011@brightchoice.vppz
 
 const sampleCourses = [
   {
+    id: 1,
     title: 'Fun with Coding',
     description: 'Learn programming basics through fun games and interactive activities! Perfect for young minds to start their coding journey.',
     ageGroup: '6-10 years',
     duration: '12 weeks',
     price: 199,
     category: 'Technology',
-    image: '💻'
+    image: '💻',
+    pamphlet_image:''
   },
   {
+    id: 2,
     title: 'Creative Art Studio',
     description: 'Express yourself through painting, drawing, and digital art! Unleash your creativity with our amazing art classes.',
     ageGroup: '5-12 years',
     duration: '10 weeks',
     price: 179,
     category: 'Arts',
-    image: '🎨'
+    image: '🎨',
+    pamphlet_image:''
   },
   {
+    id: 3,
     title: 'Math Adventures',
     description: 'Make math fun with puzzles, games, and real-world problems! Transform math from boring to exciting!',
     ageGroup: '7-11 years',
     duration: '14 weeks',
     price: 189,
     category: 'Mathematics',
-    image: '🔢'
+    image: '🔢',
+    pamphlet_image:''
   },
   {
+    id: 4,
     title: 'Science Explorers',
     description: 'Discover the wonders of science through exciting experiments! Hands-on learning that sparks curiosity.',
     ageGroup: '6-10 years',
     duration: '12 weeks',
     price: 199,
     category: 'Science',
-    image: '🔬'
+    image: '🔬',
+    pamphlet_image:''
   },
   {
+    id: 5,
     title: 'Language Learning',
     description: 'Learn new languages through stories, songs, and games! Make language learning fun and interactive.',
     ageGroup: '5-12 years',
     duration: '16 weeks',
     price: 219,
     category: 'Languages',
-    image: '🌍'
+    image: '🌍',
+    pamphlet_image:''
   },
   {
+    id: 6,
     title: 'Music & Rhythm',
     description: 'Explore music, learn instruments, and create your own songs! Develop musical skills while having fun.',
     ageGroup: '6-11 years',
     duration: '10 weeks',
     price: 179,
     category: 'Music',
-    image: '🎵'
+    image: '🎵',
+    pamphlet_image:''
   }
 ];
 
@@ -121,17 +133,17 @@ const sampleTeachers =
   {
     teacherName:"Bharti",
     qualification: "XYZ",
-    experience: 2
+    experience: "2 years"
   },
   {
     teacherName:"Khushboo",
     qualification: "XYZ",
-    experience: 2
+    experience: "2 years"
   }
   ,{
     teacherName:"XYZ",
     qualification: "XYZ",
-    experience: 2
+    experience: "2 years"
   }
 ]
 
