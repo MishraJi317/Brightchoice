@@ -1,3 +1,9 @@
+.teachers-page {
+  min-height: 80vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 .teachers-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -126,4 +132,15 @@
 @media (max-width: 360px) {
   .profile-card { width: 100%; padding: 14px; }
   .avatar { flex-basis: 64px; height: 64px; }
+}
+
+
+@media (max-width: 768px) {
+  .teachers-header h1 {
+    font-size: 2rem;
+  }
+
+  .teachers-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -50,13 +50,13 @@ const Teachers = () => {
   }
 
   return (
-   <div className="teachers-container">
-
-    <div className="teachers-header">
+    <div className='teachers-page'>
+      <div className="teachers-header">
         <h1>🌟 Our Amazing Teachers 🌟</h1>
         <p>Meet our dedicated and experienced teachers who make learning fun!</p>
       </div>
 
+   <div className="teachers-container">
     {teachers.length === 0 ? (
           <div className="no-teachers">
             <p>No teachers available at the moment. Check back soon! 🎉</p>
@@ -89,6 +89,7 @@ const Teachers = () => {
             ))}
           </div>
         )}
+   </div>
    </div>
   );
 };
