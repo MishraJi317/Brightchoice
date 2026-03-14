@@ -27,7 +27,11 @@
   color: #4ECDC4;
   margin-bottom: 1rem;
 }
-
+.logo-image{
+  width:150px;
+  height:50px;
+  object-fit:contain;
+}
 .footer-section ul {
   list-style: none;
 }

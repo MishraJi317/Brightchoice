@@ -218,6 +218,12 @@
   .about-header h1 {
     font-size: 2rem;
   }
+
+  .about-header p {
+    font-size: 1.2rem;
+    width: 80vw;
+    margin-left: 05vw;
+  }
   
   .about-grid {
     grid-template-columns: 1fr;

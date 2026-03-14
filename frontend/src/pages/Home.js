@@ -64,18 +64,18 @@ const Home = () => {
           <div className="testimonials-grid">
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
-              <p>"My daughter loves her coding classes! The teachers are amazing!"</p>
-              <p className="testimonial-author">- Sarah M.</p>
+              <p>The Jolly Phonics program has greatly improved my child’s reading and pronunciation skills.</p>
+              <p className="testimonial-author">- XXXXX</p>
             </div>
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
-              <p>"Best investment in my child's education. Highly recommended!"</p>
-              <p className="testimonial-author">- John D.</p>
+              <p>Excellent teaching methods"</p>
+              <p className="testimonial-author">- XXXXX</p>
             </div>
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
-              <p>"The art classes have really brought out my son's creativity!"</p>
-              <p className="testimonial-author">- Emily R.</p>
+              <p>Amazing Teachers</p>
+              <p className="testimonial-author">- XXXXX</p>
             </div>
           </div>
         </div>

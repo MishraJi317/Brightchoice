@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>🌟 BrightChoice</h3>
+            <img src="/assets/logo.jpeg" alt="BrightChoice Logo" className="logo-image" />
             <p>Making learning fun and engaging for kids!</p>
           </div>
           <div className="footer-section">
