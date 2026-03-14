@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const AboutSchema = new mongoose.Schema({
+  parentName: {
+    type: String,
+    required: true
+  }
  
 }, {
   timestamps: true
