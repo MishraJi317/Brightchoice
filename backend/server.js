@@ -27,6 +27,7 @@ app.use('/api/courses', require('./routes/courses'));
 app.use('/api/packages', require('./routes/packages'));
 app.use('/api/reviews', require('./routes/reviews'));
 app.use('/api/teachers', require('./routes/teachers'));
+app.use('/api/about', require('./routes/about'));
 
 
 app.use(express.static(path.join(dirname,"/frontend/build")))

@@ -30,6 +30,9 @@ const hideImage = () => {
     try {
       const response = await axios.get('/api/courses');
       setCourses(response.data);
+      const unsortedCourses = response.data;
+      const sortedCourses = unsortedCourses.sort((a, b) => a.id - b.id);
+      setCourses(sortedCourses);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching courses:', error);

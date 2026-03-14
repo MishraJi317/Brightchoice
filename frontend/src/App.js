@@ -8,6 +8,7 @@ import Packages from './pages/Packages';
 import Reviews from './pages/Reviews';
 import Teachers from './pages/Teachers';
 import Footer from './components/Footer';
+import About from './pages/About';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/packages" element={<Packages />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/teachers" element={<Teachers />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>

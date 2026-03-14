@@ -7,9 +7,9 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="title-icon">🎨</span>
+            {/* <span className="title-icon">🎨</span> */}
             Welcome to BrightChoice!
-            <span className="title-icon">✨</span>
+            {/* <span className="title-icon">✨</span> */}
           </h1>
           <p className="hero-subtitle">
             Where Learning Meets Fun! Discover amazing courses designed 
@@ -22,10 +22,10 @@ const Home = () => {
         </div>
         <div className="hero-image">
           <div className="floating-elements">
-            <span className="float-emoji">📚</span>
+            {/* <span className="float-emoji">📚</span>
             <span className="float-emoji">🎯</span>
             <span className="float-emoji">🌟</span>
-            <span className="float-emoji">🎨</span>
+            <span className="float-emoji">🎨</span> */}
           </div>
         </div>
       </section>
