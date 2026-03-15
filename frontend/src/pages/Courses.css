@@ -88,8 +88,8 @@
 }
 
 .course_img{
-  width: auto;
-  height: 90vh;
+  max-width: 100vw;
+  max-height: 90vh;
   z-index: 1002;
   opacity: 1;
   display: block;
@@ -216,6 +216,15 @@
     font-size: 2rem;
   }
   
+.course_img {
+    display: block;
+    height: 60vh;
+    width: 95vw;
+    opacity: 1;
+    width: auto;
+    z-index: 1002;
+}
+
   .courses-grid {
     grid-template-columns: 1fr;
   }

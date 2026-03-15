@@ -65,17 +65,17 @@ const Home = () => {
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
               <p>The Jolly Phonics program has greatly improved my child’s reading and pronunciation skills.</p>
-              <p className="testimonial-author">- XXXXX</p>
+              <p className="testimonial-author">- Rajeev</p>
             </div>
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
               <p>Excellent teaching methods"</p>
-              <p className="testimonial-author">- XXXXX</p>
+              <p className="testimonial-author">- Sania</p>
             </div>
             <div className="testimonial-card">
               <div className="stars">⭐⭐⭐⭐⭐</div>
               <p>Amazing Teachers</p>
-              <p className="testimonial-author">- XXXXX</p>
+              <p className="testimonial-author">- Priya</p>
             </div>
           </div>
         </div>
